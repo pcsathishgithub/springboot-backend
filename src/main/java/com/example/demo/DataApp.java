@@ -35,7 +35,7 @@ public class DataApp {
         }        
     }
 
-    @GetMapping("/location/{id}")
+    @GetMapping("/locations/{id}")
     public House getData(@PathVariable(required = false) String id) {
         try(InputStream in=Thread.currentThread().getContextClassLoader().getResourceAsStream("db.json")){
         //pass InputStream to JSON-Library, e.g. using Jackson
