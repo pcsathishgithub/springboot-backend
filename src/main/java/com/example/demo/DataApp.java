@@ -45,7 +45,7 @@ public class DataApp {
                 for (int i=0; i<houses.length;i++) {
                     if (houses[i].getId().equals(id)) {
                          
-                        System.out.println("selected house- " + houses[i].getId() + ", "+ houses[i].getCity());
+                          System.out.println("selected house- " + houses[i].getId() + ", "+ houses[i].getCity());
                         return houses[i];
                     }
                 }
