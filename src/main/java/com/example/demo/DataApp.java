@@ -26,7 +26,7 @@ public class DataApp {
             ObjectMapper mapper = new ObjectMapper();
             House[] houses = mapper.readValue(in, House[].class);
             List<House> lstHouses = Arrays.asList(houses);
-            logger.debug("Houses size "+ lstHouses.size());
+            System.out.println("Houses size "+ lstHouses.size());
             return lstHouses;
            
         }
@@ -45,7 +45,7 @@ public class DataApp {
                 for (int i=0; i<houses.length;i++) {
                     if (houses[i].getId().equals(id)) {
                          
-                         logger.debug("selected house- " + houses[i].getId() + ", "+ houses[i].getCity());
+                        System.out.println("selected house- " + houses[i].getId() + ", "+ houses[i].getCity());
                         return houses[i];
                     }
                 }
